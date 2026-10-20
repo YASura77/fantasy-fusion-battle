@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fantasy Fusion Battle</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <p class="eyebrow">TEXT GAME • V0.1</p>
+        <h1>Fantasy Fusion Battle</h1>
+        <p class="subtitle">Hewan + Benda + Tema → Makhluk unik → Pertarungan.</p>
+      </div>
+      <div class="tier">ORIGIN WORLD</div>
+    </header>
+
+    <section class="panel">
+      <h2>🧬 Character Creator</h2>
+      <div class="creator-grid">
+        <label>Hewan
+          <select id="animal">
+            <option value="Wolf">🐺 Wolf</option>
+            <option value="Dragon">🐉 Dragon</option>
+            <option value="Bahamut">🐲 Bahamut</option>
+            <option value="Eternal Jellyfish">🪼 Eternal Jellyfish</option>
+            <option value="Phoenix">🔥 Phoenix</option>
+          </select>
+        </label>
+        <label>Benda
+          <select id="object">
+            <option value="Bloodsmith">🩸 Bloodsmith</option>
+            <option value="Nuclear">☢️ Nuclear</option>
+            <option value="Shaman Equipment">🔮 Shaman Equipment</option>
+            <option value="Origin Grid">⚡ Origin Grid</option>
+            <option value="Celestial Sword">⚔️ Celestial Sword</option>
+          </select>
+        </label>
+        <label>Tema
+          <select id="theme">
+            <option value="Origin World">🌌 Origin World</option>
+            <option value="Pangu Era">🐉 Pangu Era</option>
+            <option value="Chaos">🌀 Chaos</option>
+            <option value="Order">⚖️ Order</option>
+            <option value="Primordial">✨ Primordial</option>
+          </select>
+        </label>
+      </div>
+      <button id="createBtn">✨ Fuse Character</button>
+    </section>
+
+    <section id="character" class="panel hidden"></section>
+
+    <section class="panel">
+      <h2>⚔️ Quick Battle</h2>
+      <p class="muted">Buat karaktermu, lalu tekan mulai battle. V0.1 memakai rule engine lokal; GPT akan kita sambungkan di tahap berikutnya.</p>
+      <div class="battle-grid">
+        <div id="playerCard" class="fighter empty">Player belum dibuat</div>
+        <div class="vs">VS</div>
+        <div id="enemyCard" class="fighter"></div>
+      </div>
+      <button id="battleBtn" disabled>⚔️ Mulai Battle</button>
+      <div id="battleLog" class="battle-log"></div>
+    </section>
+  </main>
+  <script type="module" src="/game/app.js"></script>
+</body>
+</html>
