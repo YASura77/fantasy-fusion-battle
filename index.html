@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantasy Fusion Battle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<header class="hero">
+<p class="eyebrow">FANTASY FUSION BATTLE</p>
+<h1>Hewan + Benda + Tema</h1>
+<p class="subtitle">Bebaskan imajinasimu. Tulis apa pun yang kamu inginkan, lalu gabungkan menjadi satu makhluk fusion.</p>
+</header>
+<section class="card creator">
+<h2>✨ Create Your Fusion</h2>
+<label for="animal">🐾 Hewan / Makhluk</label>
+<input id="animal" type="text" placeholder="Contoh: Serigala bermata tiga">
+<label for="object">⚔️ Benda / Artefak</label>
+<input id="object" type="text" placeholder="Contoh: Pedang pemakan dimensi">
+<label for="theme">🌌 Tema / Dunia</label>
+<input id="theme" type="text" placeholder="Contoh: Origin World">
+<button id="fuseBtn" class="primary">⚡ FUSE MY CREATION</button>
+<div id="fusionResult" class="result hidden"></div>
+</section>
+<section class="card battle">
+<div class="section-heading">
+<div><p class="eyebrow">BATTLE TEST</p><h2>⚔️ Quick Battle</h2></div>
+<button id="battleBtn" class="secondary">Mulai Battle</button>
+</div>
+<div id="battleLog" class="battle-log"><p>Belum ada pertarungan. Buat fusion terlebih dahulu.</p></div>
+</section>
+<footer><p>Fantasy Fusion Battle • V0.2 Free Creation Prototype</p></footer>
+</main>
+<script src="game/engine.js"></script>
+<script src="game/app.js"></script>
+</body>
+</html>
